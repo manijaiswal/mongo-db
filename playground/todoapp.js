@@ -52,7 +52,7 @@ if(err){
 //documentation
 console.log('connected to mongodb');
 
-db.collection('Todos').find({}).toArray((err,docs)=>{
+db.collection('Todos').find({name:'vikash'}).toArray((err,docs)=>{
   if(err)
   {
     return console.log('unable to fetch error');
